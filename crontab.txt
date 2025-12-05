@@ -1,3 +1,5 @@
 #run sudo crontab -e
+#Edit the paths with where your py file is located, the cron tab can be configured to update when you want
+#Just be sure to replace all of my paths with yours, with the same format
 
 00 22 * * * /bin/bash -c 'echo "$(date): Running update..."' >> /home/bederib/update_log.txt && /usr/bin/python3 /home/bederib/update_server.py >> /home/bederib/update_log.txt 2>&1
