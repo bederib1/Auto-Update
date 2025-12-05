@@ -3,4 +3,4 @@
 #As for the update_log.txt, set the path to that as well to the text file provided as well, 
 #this is so that you can check the log by using "cat <update_log.txt path>"
 
-00 22 * * * /bin/bash -c 'echo "$(date): Running update..."' >> /home/bederib/source/update_log.txt && /usr/bin/python3 /home/bederib/source/update_server.py >> /home/bederib/source/update_log.txt 2>&1
+00 22 * * * /bin/bash -c 'echo "$(date): Running update..."' >> /home/bederib/source/update_log.txt && /usr/bin/python3 /home/bederib/source/autoupdate.py >> /home/bederib/source/update_log.txt 2>&1
